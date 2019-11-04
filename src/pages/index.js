@@ -2,10 +2,23 @@ import React from 'react';
 import tw from 'tailwind.macro';
 
 const Wrapper = tw.div`
-  bg-gray-200
-  text-xl
-  w-1/2
+  w-screen
+  h-screen
+  text-x1
+  flex
+  items-center
+  justify-center
+  bg-pink-700
+`;
+const Heading = tw.h1`
+  text-6xl
+  font-bold
+  text-white
 `;
 export default function index() {
-  return <Wrapper>Hello World</Wrapper>;
+  return (
+    <Wrapper>
+      <Heading>Gatsby ❣️ + Tailwind CSS + Theme UI</Heading>
+    </Wrapper>
+  );
 }
